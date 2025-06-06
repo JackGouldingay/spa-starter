@@ -1,0 +1,68 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.1",
+    "systemjs": "^6.15.1",
+    "tailwindcss": "^4.1.8",
+    "vite-plugin-environment": "^1.1.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/starter.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/starter.es.js",
+      "require": "./dist/starter.umd.js"
+    }
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "test": "vitest --run"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-basic-ssl": "^2.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^26.1.0",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5",
+    "vite-plugin-html-purgecss": "^0.1.1",
+    "vitest": "^3.1.4"
+  },
+  "description": "My project"
+}
