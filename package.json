@@ -1,5 +1,6 @@
 {
   "name": "starter",
+  "homepage": "/",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -25,7 +26,10 @@
   "scripts": {
     "start": "vite",
     "build": "tsc -b && vite build",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "predeploy": "npm run build",
+    "deploy": "npm run purge",
+    "purge": "node ./scripts/removeFile.js"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +62,7 @@
     "@vitejs/plugin-basic-ssl": "^2.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "jsdom": "^26.1.0",
+    "mkdirp": "^3.0.1",
     "rollup-plugin-visualizer": "^5.14.0",
     "typescript": "^5.8.3",
     "vite": "^6.2.5",

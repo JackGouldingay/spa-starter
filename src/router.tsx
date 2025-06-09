@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import App from './App';
+import App from './app';
 import ErrorPage from './errorPage';
 
 const Tool1 = React.lazy(() => import("./routes/tool1Page"));
@@ -26,4 +26,4 @@ export default createBrowserRouter([
       }
     ]
   }
-], { basename: "/" });
+], { basename: "/react" });
