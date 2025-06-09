@@ -1,5 +1,5 @@
 import fs from "fs";
-import path, { dirname } from "path";
+import path from "path";
 
 const targetPath = path.resolve("../assets/react-app");
 const buildPath = path.resolve("dist");
